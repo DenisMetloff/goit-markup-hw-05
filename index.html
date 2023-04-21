@@ -31,7 +31,7 @@
               <a class="header-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="header-item">
-              <a class="header-link link" href="">Contacts</a>
+              <a class="header-link link" data-modal-open href="">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -387,7 +387,7 @@
       </section>
     </main>
 
-    <!-- footer -->
+    <!-- ============footer========= -->
     <footer class="footer">
       <div class="conteiner">
         <div class="logo_social">
@@ -432,10 +432,33 @@
               </a>
             </li>
           </ul>
-          
+        </div>
+        <div>
+
         </div>
       </div>
       </div>
     </footer>
+
+    <!--============ backdrop======== -->
+
+    <div class="backdrop" data-modal >
+      <div class="mobal">
+        <button type="button" data-modal-close class="mobal_close_btn">
+          <svg class="symbol-def" width="8" hidden="8" >
+            <use href="./images/icon4.svg#icon-Vector">
+
+            </use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/mobal.js"></script>
+    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
